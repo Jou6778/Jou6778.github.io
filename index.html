@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Prueba</title>
+    <title>Página de Información</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-1 img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .section-1 .text-container {
+            width: 45%;
+            padding-left: 20px;
+        }
+
+        .section-1 .text-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .section-2, .section-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-2 img, .section-3 img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .section-2 .text-container, .section-3 .text-container {
+            width: 65%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido a página de prueba</h1>
+
+<header>
+    <h1>Página de Información</h1>
+</header>
+
+<!-- Primera Sección -->
+<section class="section-1">
+    <img src="https://via.placeholder.com/800x400" alt="Imagen de prueba grande">
+    <div class="text-container">
+        <h2>Sección 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim justo id ex feugiat, eget posuere odio congue.</p>
+        <p>Curabitur maximus, felis sit amet fermentum efficitur, risus ipsum gravida neque, sit amet luctus sem arcu non nisi.</p>
+        <p>Aliquam in mi vel magna elementum vehicula quis in libero. Donec vehicula mauris sed felis dictum, ac blandit lectus.</p>
+    </div>
+</section>
+
+<!-- Segunda Sección -->
+<section class="section-2">
+    <img src="https://via.placeholder.com/400x300" alt="Imagen de prueba pequeña">
+    <div class="text-container">
+        <h2>Sección 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet urna malesuada, accumsan ex at, vehicula purus.</p>
+    </div>
+</section>
+
+<!-- Tercera Sección -->
+<section class="section-3">
+    <img src="https://via.placeholder.com/400x300" alt="Imagen de prueba pequeña">
+    <div class="text-container">
+        <h2>Sección 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec sem non erat congue vehicula. Duis et metus eros. Morbi placerat, nisl eu facilisis suscipit, augue dolor vestibulum nisl, vel dapibus lacus urna sit amet lorem.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Página de Información. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
