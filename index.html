@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: white; /* f4f4f4color de fondo de la pagina */
+            background-color: white; /* Color de fondo de la página */
         }
 
         header {
@@ -18,19 +18,22 @@
             color: #fff;
             padding: 10px 20px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column; /* Cambiado a columna para mejor visualización en móviles */
+            align-items: center; /* Centrar elementos */
         }
 
         header img {
             width: 180px;
             height: auto;
+            margin-bottom: 10px; /* Espacio inferior para separar el logo de los botones */
         }
 
         /* Estilos de los botones */
         header .nav-buttons {
             display: flex;
+            flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas si es necesario */
             gap: 20px; /* Añade espacio entre los botones */
+            justify-content: center; /* Centrar los botones */
         }
 
         header .nav-buttons a {
@@ -42,32 +45,24 @@
             padding: 0; /* Elimina el relleno */
         }
 
-
-
         /* Nueva sección con imagen a la derecha */
         .welcome-section {
-    background-color: RGBA(217, 217, 217, 1);
-    padding: 50px 20px; /* Puedes ajustar el padding según lo que necesites */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 300px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 0; /* Elimina el margen superior */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-right: 0; /* Elimina el margen derecho */
-}
-
-
+            background-color: RGBA(217, 217, 217, 1);
+            padding: 20px; /* Ajustado para pantallas pequeñas */
+            display: flex;
+            flex-direction: column; /* Cambiado a columna para mejor visualización en móviles */
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: auto; /* Cambiado a auto para ajuste dinámico */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
         .welcome-section img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 500px;
-            height: 50px;
+            width: 100%; /* Imagen ocupa todo el ancho */
+            max-width: 500px; /* Máximo ancho para pantallas grandes */
+            height: auto;
         }
 
         .welcome-section h2 {
@@ -82,7 +77,6 @@
             font-size: 1.2em;
         }
 
-
         section {
             padding: 20px;
             margin: 10px;
@@ -90,147 +84,136 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-/* Seccion 1  */
-  .section-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alineación al inicio para que la imagen y el contenido estén alineados */
-    margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
-    background-color: white; /* Fondo blanco para cada box */
-    padding: 20px; /* Espaciado interior */
-    margin-left: 30px; /* Elimina el margen izquierdo */
-    margin-right: 30px; /* Elimina el margen derecho */
-    position: relative; /* Permite la superposición */
-    z-index: 1; /* Asegura que esta sección esté encima */
-}
+        /* Seccion 1  */
+        .section-1 {
+            display: flex;
+            flex-direction: column; /* Cambiado a columna para móviles */
+            margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
+            background-color: white; /* Fondo blanco para cada box */
+            padding: 20px; /* Espaciado interior */
+            margin: 0 30px; /* Elimina el margen izquierdo y derecho */
+            position: relative; /* Permite la superposición */
+            z-index: 1; /* Asegura que esta sección esté encima */
+        }
 
-.left-image {
-    width: 45%; /* Ancho de la imagen */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados */
+        .left-image {
+            width: 100%; /* Imagen ocupa todo el ancho */
+            height: auto;
+            border-radius: 10px; /* Bordes redondeados */
+            margin-bottom: 20px; /* Espacio inferior para separar de contenido */
+        }
 
-}
+        .right-container {
+            display: flex;
+            flex-direction: column; /* Colocar los boxes en columna */
+            width: 100%; /* Ancho completo */
+        }
 
-.right-container {
-    display: flex;
-    flex-direction: column; /* Para colocar los boxes en columna */
-    justify-content: space-between; /* Espaciado entre boxes */
-    width: 45%; /* Ancho del contenedor derecho */
-}
+        .box {
+            background-color: white; /* Fondo blanco para cada box */
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 10px; /* Espaciado interior */
+            margin-bottom: 10px; /* Espacio entre los boxes */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
 
-.box {
-    background-color: white; /* Fondo blanco para cada box */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interior */
-    margin-bottom: 10px; /* Espacio entre los boxes */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-.titleSection {
-    font-weight: bold; /* Negrita para los títulos */
-    color: RGBA(0, 60, 53, 1); /* Color para los títulos */
-}
+        .titleSection {
+            font-weight: bold; /* Negrita para los títulos */
+            color: RGBA(0, 60, 53, 1); /* Color para los títulos */
+        }
 
-.block-image {
-    width: 100%; /* Imagen de lado a lado del contenedor */
-    height: 20px; /* Alto mínimo de la imagen */
-    margin: 0; /* Elimina márgenes */
-    display: block; /* Asegura que la imagen se comporte como bloque */
-    padding: 0; /* Elimina cualquier relleno */
-}
+        .block-image {
+            width: 100%; /* Imagen de lado a lado del contenedor */
+            height: auto; /* Ajuste automático de la altura */
+            margin: 0; /* Elimina márgenes */
+            display: block; /* Asegura que la imagen se comporte como bloque */
+            padding: 0; /* Elimina cualquier relleno */
+        }
 
+        /* Seccion 2  */
+        .section-2,
+        .section-3 {
+            display: flex;
+            flex-direction: column; /* Cambiado a columna para móviles */
+            align-items: center; /* Centrar elementos */
+            margin-bottom: 20px;
+        }
 
+        .section-2 img,
+        .section-3 img {
+            width: 100%; /* Imagen ocupa todo el ancho */
+            max-width: 400px; /* Máximo ancho para pantallas grandes */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Espacio inferior para separar de contenido */
+        }
 
-/* Seccion 2  */
+        .section-2 .text-container,
+        .section-3 .text-container {
+            width: 100%; /* Ancho completo */
+            padding: 0 20px; /* Relleno lateral */
+        }
 
-.section-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 400px;
-}
+        .section-2 h2,
+        .section-3 h2 {
+            color: RGBA(0, 60, 53, 1);
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
 
-.section-2 img {
-    width: 37%;
-    height: auto;
-    border-radius: 10px;
-}
+        .section-2 .button,
+        .section-3 .button {
+            background: transparent; /* Sin fondo */
+            color: RGBA(175, 134, 46, 1); /* Color del texto */
+            border: none; /* Sin borde */
+            font-size: 1em; /* Tamaño de fuente */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            text-decoration: underline; /* Subraya el texto */
+        }
 
-.section-2 .text-container {
-    width: 65%;
-}
-
-.section-2 h2 {
-    color: RGBA(0, 60, 53, 1);
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section-2 .button {
-    background: transparent; /* Sin fondo */
-    color: RGBA(175, 134, 46, 1); /* Color del texto */
-    border: none; /* Sin borde */
-    font-size: 1em; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-decoration: underline; /* Subraya el texto */
-}
-
-.section-2 .button:hover {
-    text-decoration: none; /* Elimina la subrayado al pasar el ratón */
-}
-
-
-/* Sección 3 */
-.section-3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 400px;
-}
-
-.section-3 img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.section-3 .text-container {
-    width: 65%;
-}
-
-.section-3 h2 {
-    color: RGBA(0, 60, 53, 1);
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section-3 .button {
-    background: transparent; /* Sin fondo */
-    color: RGBA(175, 134, 46, 1); /* Color del texto */
-    border: none; /* Sin borde */
-    font-size: 1em; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-decoration: underline; /* Subraya el texto */
-}
-
-.section-3 .button:hover {
-    text-decoration: none; /* Elimina la subrayado al pasar el ratón */
-}
-
-
+        .section-2 .button:hover,
+        .section-3 .button:hover {
+            text-decoration: none; /* Elimina la subrayado al pasar el ratón */
+        }
 
         footer {
-            background-color:RGBA(0, 60, 53, 1);
+            background-color: RGBA(0, 60, 53, 1);
             color: #fff;
             text-align: center;
             padding: 10px 0;
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        /* Media Queries para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .section-1, .section-2, .section-3 {
+                flex-direction: column; /* Cambia a columna para móviles */
+                align-items: center; /* Centrar elementos */
+            }
+
+            .section-1 img, .section-2 img, .section-3 img {
+                width: 90%; /* Imagen ocupa el 90% del ancho en móviles */
+                max-width: none; /* Elimina el max-width para ajuste completo */
+            }
+
+            .welcome-section {
+                padding: 20px; /* Ajuste de padding para móviles */
+                text-align: center; /* Centrar texto en móviles */
+            }
+
+            header {
+                flex-direction: column; /* Coloca los elementos en columna en móviles */
+                align-items: center; /* Centrar elementos en header */
+            }
+
+            header .nav-buttons {
+                flex-direction: column; /* Botones en columna en móviles */
+                align-items: center; /* Centrar botones */
+            }
         }
     </style>
 </head>
