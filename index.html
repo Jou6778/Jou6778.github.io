@@ -42,6 +42,42 @@
             padding: 0; /* Elimina el relleno */
         }
 
+
+
+        /* Nueva sección con imagen a la derecha */
+        .welcome-section {
+            background-color: RGBA(217, 217, 217, 1);
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-section img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: auto;
+        }
+
+        .welcome-section h2 {
+            color: RGBA(0, 60, 53, 1);
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            color: RGBA(0, 60, 53, 1);
+            font-size: 1.2em;
+        }
+
+
         section {
             padding: 20px;
             margin: 10px;
@@ -113,7 +149,20 @@
 </header>
 
 
+<!-- Sección de bienvenida con imagen y texto centrado -->
+<section class="welcome-section">
+    <img src="img/welcome-image.png" alt="Imagen de bienvenida">
+    <div class="text-container">
+        <h2>¡Bienvenidos a ESTA!<br>Donde el Reto Chirripó te espera.</h2>
+        <p>Te ofrecemos además de un excelente ambiente laboral, la oportunidad para CRECER y PROSPERAR en tu carrera profesional.</p>
+    </div>
+</section>
+
+
 <br>
+
+
+
 
 <hr>
 
