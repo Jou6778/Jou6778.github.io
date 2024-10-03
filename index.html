@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /*color de fondo de la pagina */
         }
 
         header {
@@ -182,10 +182,49 @@
 }
 
 
+/* Sección 3 */
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.section-3 img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-3 .text-container {
+    width: 65%;
+}
+
+.section-3 h2 {
+    color: RGBA(0, 60, 53, 1);
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-3 .button {
+    background: transparent; /* Sin fondo */
+    color: RGBA(175, 134, 46, 1); /* Color del texto */
+    border: none; /* Sin borde */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: underline; /* Subraya el texto */
+}
+
+.section-3 .button:hover {
+    text-decoration: none; /* Elimina la subrayado al pasar el ratón */
+}
+
 
 
         footer {
-            background-color: #333;
+            background-color:RGBA(0, 60, 53, 1);
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -260,20 +299,20 @@
 </section>
 
 
-
-
 <!-- Tercera Sección -->
 <section class="section-3">
-    <img src="https://establishmentlabscr.sharepoint.com/sites/DatabasePginaWebTTD/Lists/tblPosiciones/Attachments/1/Slide2.PNG?web=1" alt="Imagen de prueba grande">
+    <img src="img/Picture6.png" alt="Imagen de prueba grande" class="left-image">
     <div class="text-container">
-        <h2>Sección 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec sem non erat congue vehicula. Duis et metus eros. Morbi placerat, nisl eu facilisis suscipit, augue dolor vestibulum nisl, vel dapibus lacus urna sit amet lorem.</p>
+        <h2>Posiciones y Requisitos</h2>
+        <p>Explora nuestras Posiciones y Requisitos, donde podrás conocer en detalle las oportunidades de crecimiento dentro de nuestro equipo de manufactura. Aquí encontrarás información clara sobre las posiciones disponibles, desde Operario 1 hasta Supervisor, junto con los requisitos necesarios para cada rol. Descubre cómo puedes avanzar en tu carrera y qué habilidades y experiencias te acercarán a tus metas profesionales.</p>
+        <button class="button" onclick="window.location.href='puestos.html'">Leer más</button>
     </div>
 </section>
 
+
 <!-- Footer -->
 <footer>
-    <p>&copy; 2024 Página de Información. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Todos los derechos reservados </p>
 </footer>
 
 </body>
