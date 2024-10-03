@@ -119,13 +119,15 @@
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
     font-weight: 500;
-    background-color: rgba(0, 60, 53, 1); /* Añade esta línea */
 
 }
 
 .navbar-light.sticky-top {
     top: -100px;
     transition: .5s;
+}
+.navbar-light {
+    background-color: rgba(0, 60, 53, 1) !important;
 }
 
 @media (min-width: 992px) {
