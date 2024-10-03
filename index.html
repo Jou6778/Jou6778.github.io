@@ -14,14 +14,37 @@
         }
 
         header {
-            background-color: #333;
+            background-color: RGBA(0, 60, 53, 1);
             color: #fff;
             padding: 10px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
         }
 
-        h1 {
-            margin: 0;
+        header img {
+            width: 50px;
+            height: auto;
+        }
+
+        header .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        header .nav-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        header .nav-buttons a:hover {
+            background-color: #0056b3;
         }
 
         section {
@@ -84,24 +107,33 @@
 <body>
 
 <header>
-    <h1>Página de Información</h1>
+    <!-- Imagen pequeña a la izquierda -->
+    <img src="img/Pictur2e1.png" alt="Logo">
+
+    <!-- Botones a la derecha -->
+    <div class="nav-buttons">
+        <a href="historias.html">Historias</a>
+        <a href="puestos.html">Posiciones y Requisitos</a>
+    </div>
 </header>
+
 <hr>
 <!-- Botón con enlace a otro archivo HTML -->
-<a href="pagina2.html">
+<a href="historias.html">
     <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
         Ir a la siguiente página
     </button>
 </a>
 
 <hr>
-<hr>
 <!-- Botón con enlace a otro archivo HTML -->
-<a href="pagina3.html">
+<a href="puestos.html">
     <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
         Ir a la siguiente página Carrusel
     </button>
 </a>
+
+<hr>
 
 <hr>
 <!-- Primera Sección -->
