@@ -89,27 +89,40 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .section-1 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+/* Seccion de imagen y 3 contenedores  */
+      .section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación al inicio para que la imagen y el contenido estén alineados */
+    margin: 20px 0; /* Espacio superior e inferior */
+    background-color: rgba(217, 217, 217, 1); /* Color de fondo para el contenedor */
+    padding: 20px; /* Espaciado interior */
+}
 
-        .section-1 img {
-            width: 50%;
-            height: auto;
-            border-radius: 10px;
-        }
+.left-image {
+    width: 50%; /* Ancho de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+}
 
-        .section-1 .text-container {
-            width: 45%;
-            padding-left: 20px;
-        }
+.right-container {
+    display: flex;
+    flex-direction: column; /* Para colocar los boxes en columna */
+    justify-content: space-between; /* Espaciado entre boxes */
+    width: 45%; /* Ancho del contenedor derecho */
+}
 
-        .section-1 .text-container h2 {
-            margin-bottom: 10px;
-        }
+.box {
+    background-color: white; /* Fondo blanco para cada box */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interior */
+    margin-bottom: 10px; /* Espacio entre los boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+
 
         .section-2, .section-3 {
             display: flex;
@@ -164,6 +177,24 @@
 
 
 <br>
+<!-- Primera Sección -->
+<section class="section-1">
+    <img src="img/Picture1grandota.png" alt="Imagen de prueba grande" class="left-image">
+    <div class="right-container">
+        <div class="box">
+            <h2>Título 1</h2>
+            <p>Contenido del primer bloque de información.</p>
+        </div>
+        <div class="box">
+            <h2>Título 2</h2>
+            <p>Contenido del segundo bloque de información.</p>
+        </div>
+        <div class="box">
+            <h2>Título 3</h2>
+            <p>Contenido del tercer bloque de información.</p>
+        </div>
+    </div>
+</section>
 
 
 
