@@ -89,7 +89,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color:white;
+color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -117,7 +117,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color:white;
+    color: rgba(153, 153, 153, 0.8); /*** var(--dark);***/
     font-weight: 500;
 
 }
