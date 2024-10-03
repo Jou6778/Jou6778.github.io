@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: white; /* f4f4f4color de fondo de la pagina */
+            background-color: white; /* color de fondo de la pagina */
         }
 
         header {
@@ -20,6 +20,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan */
         }
 
         header img {
@@ -42,32 +43,23 @@
             padding: 0; /* Elimina el relleno */
         }
 
-
-
         /* Nueva sección con imagen a la derecha */
         .welcome-section {
-    background-color: RGBA(217, 217, 217, 1);
-    padding: 50px 20px; /* Puedes ajustar el padding según lo que necesites */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 300px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 0; /* Elimina el margen superior */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-right: 0; /* Elimina el margen derecho */
-}
-
-
+            background-color: RGBA(217, 217, 217, 1);
+            padding: 50px 20px; /* Ajusta el padding según lo que necesites */
+            display: flex;
+            flex-direction: column; /* Cambiar a columna para móviles */
+            align-items: center; /* Centrar el contenido */
+            position: relative;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0; /* Elimina el margen */
+        }
 
         .welcome-section img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 500px;
-            height: 50px;
+            width: 100%; /* Imagen responsiva */
+            max-width: 500px; /* Ancho máximo para pantallas grandes */
+            height: auto;
         }
 
         .welcome-section h2 {
@@ -82,7 +74,6 @@
             font-size: 1.2em;
         }
 
-
         section {
             padding: 20px;
             margin: 10px;
@@ -90,141 +81,99 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-/* Seccion 1  */
-  .section-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alineación al inicio para que la imagen y el contenido estén alineados */
-    margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
-    background-color: white; /* Fondo blanco para cada box */
-    padding: 20px; /* Espaciado interior */
-    margin-left: 30px; /* Elimina el margen izquierdo */
-    margin-right: 30px; /* Elimina el margen derecho */
-    position: relative; /* Permite la superposición */
-    z-index: 1; /* Asegura que esta sección esté encima */
-}
+        /* Seccion 1 */
+        .section-1 {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en móviles */
+            justify-content: space-between;
+            align-items: flex-start; /* Alineación al inicio */
+            margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
+            background-color: white; /* Fondo blanco para cada box */
+            padding: 20px; /* Espaciado interior */
+            position: relative; /* Permite la superposición */
+            z-index: 1; /* Asegura que esta sección esté encima */
+        }
 
-.left-image {
-    width: 45%; /* Ancho de la imagen */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados */
+        .left-image {
+            width: 100%; /* Ancho de la imagen */
+            max-width: 500px; /* Ancho máximo */
+            height: auto;
+            border-radius: 10px; /* Bordes redondeados */
+        }
 
-}
+        .right-container {
+            display: flex;
+            flex-direction: column; /* Para colocar los boxes en columna */
+            justify-content: space-between; /* Espaciado entre boxes */
+            width: 100%; /* Ancho del contenedor derecho */
+        }
 
-.right-container {
-    display: flex;
-    flex-direction: column; /* Para colocar los boxes en columna */
-    justify-content: space-between; /* Espaciado entre boxes */
-    width: 45%; /* Ancho del contenedor derecho */
-}
+        .box {
+            background-color: white; /* Fondo blanco para cada box */
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 10px; /* Espaciado interior */
+            margin-bottom: 10px; /* Espacio entre los boxes */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
 
-.box {
-    background-color: white; /* Fondo blanco para cada box */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interior */
-    margin-bottom: 10px; /* Espacio entre los boxes */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-.titleSection {
-    font-weight: bold; /* Negrita para los títulos */
-    color: RGBA(0, 60, 53, 1); /* Color para los títulos */
-}
+        .titleSection {
+            font-weight: bold; /* Negrita para los títulos */
+            color: RGBA(0, 60, 53, 1); /* Color para los títulos */
+        }
 
-.block-image {
-    width: 100%; /* Imagen de lado a lado del contenedor */
-    height: 20px; /* Alto mínimo de la imagen */
-    margin: 0; /* Elimina márgenes */
-    display: block; /* Asegura que la imagen se comporte como bloque */
-    padding: 0; /* Elimina cualquier relleno */
-}
+        .block-image {
+            width: 100%; /* Imagen de lado a lado del contenedor */
+            height: 20px; /* Alto mínimo de la imagen */
+            margin: 0; /* Elimina márgenes */
+            display: block; /* Asegura que la imagen se comporte como bloque */
+            padding: 0; /* Elimina cualquier relleno */
+        }
 
+        /* Seccion 2 */
+        .section-2, .section-3 {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en móviles */
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            height: auto; /* Ajustar altura automáticamente */
+        }
 
+        .section-2 img, .section-3 img {
+            width: 100%; /* Ancho total en móviles */
+            max-width: 300px; /* Ancho máximo para pantallas grandes */
+            height: auto;
+            border-radius: 10px;
+        }
 
-/* Seccion 2  */
+        .section-2 .text-container, .section-3 .text-container {
+            width: 100%; /* Ancho total en móviles */
+            max-width: 65%; /* Ancho máximo para pantallas grandes */
+        }
 
-.section-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 400px;
-}
+        .section-2 h2, .section-3 h2 {
+            color: RGBA(0, 60, 53, 1);
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
 
-.section-2 img {
-    width: 37%;
-    height: auto;
-    border-radius: 10px;
-}
+        .section-2 .button, .section-3 .button {
+            background: transparent; /* Sin fondo */
+            color: RGBA(175, 134, 46, 1); /* Color del texto */
+            border: none; /* Sin borde */
+            font-size: 1em; /* Tamaño de fuente */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            text-decoration: underline; /* Subraya el texto */
+        }
 
-.section-2 .text-container {
-    width: 65%;
-}
-
-.section-2 h2 {
-    color: RGBA(0, 60, 53, 1);
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section-2 .button {
-    background: transparent; /* Sin fondo */
-    color: RGBA(175, 134, 46, 1); /* Color del texto */
-    border: none; /* Sin borde */
-    font-size: 1em; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-decoration: underline; /* Subraya el texto */
-}
-
-.section-2 .button:hover {
-    text-decoration: none; /* Elimina la subrayado al pasar el ratón */
-}
-
-
-/* Sección 3 */
-.section-3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 400px;
-}
-
-.section-3 img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.section-3 .text-container {
-    width: 65%;
-}
-
-.section-3 h2 {
-    color: RGBA(0, 60, 53, 1);
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.section-3 .button {
-    background: transparent; /* Sin fondo */
-    color: RGBA(175, 134, 46, 1); /* Color del texto */
-    border: none; /* Sin borde */
-    font-size: 1em; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-decoration: underline; /* Subraya el texto */
-}
-
-.section-3 .button:hover {
-    text-decoration: none; /* Elimina la subrayado al pasar el ratón */
-}
-
-
+        .section-2 .button:hover, .section-3 .button:hover {
+            text-decoration: none; /* Elimina la subrayado al pasar el ratón */
+        }
 
         footer {
-            background-color:RGBA(0, 60, 53, 1);
+            background-color: RGBA(0, 60, 53, 1);
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -232,21 +181,44 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header .nav-buttons {
+                flex-direction: column; /* Botones en columna en móviles */
+                align-items: center; /* Centra los botones */
+            }
+
+            .welcome-section {
+                padding: 20px; /* Ajusta el padding para móviles */
+            }
+
+            .section-1, .section-2, .section-3 {
+                flex-direction: column; /* Cambia a columna en móviles */
+                align-items: center; /* Centra el contenido */
+            }
+
+            .left-image, .right-container {
+                width: 100%; /* Ancho total en móviles */
+                max-width: 100%; /* Ancho máximo */
+            }
+
+            .section-2 img, .section-3 img {
+                width: 100%; /* Ancho total en móviles */
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <!-- Imagen pequeña a la izquierda -->
     <img src="img/Pictur2e1.png" alt="Logo">
 
-    <!-- Botones a la derecha -->
     <div class="nav-buttons">
         <a href="historias.html">Historias</a>
         <a href="puestos.html">Posiciones y Requisitos</a>
     </div>
 </header>
-
 
 <!-- Sección de bienvenida con imagen y texto centrado -->
 <section class="welcome-section">
@@ -257,56 +229,43 @@
     </div>
 </section>
 
-
 <!-- Primera Sección -->
 <section class="section-1">
     <img src="img/WhatsApp Image 2024-09-04 at 06.44.09_ea0ae913.jpg" alt="Imagen de prueba grande" class="left-image">
     <div class="right-container">
         <div class="box">
             <h2 class="titleSection">¿Qué?</h2>
-            <p>El Reto Chirripó motiva el crecimiento personal y profesional de los colaboradores, simbolizando la superación de desafíos hacia la cima.</p>
-            <img src="img/lineaf.png" alt="Imagen 1" class="block-image">
-        </div>
-        <div class="box">
-            <h2 class="titleSection">¿Cómo?</h2>
-            <p>Cumpliendo con los requisitos establecidos para cada puesto, adquiriendo nuevos conocimientos a través del estudio, el aprendizaje continuo y demostrando un compromiso constante con la excelencia se podrá avanzar hacia la cima.</p>
-            <img src="img/lineaf.png" alt="Imagen 2" class="block-image">
+            <p>El Reto Chirripó motiva el crecimiento personal y profesional de los colaboradores, simbolizando la superación de desafíos. Participando en esta actividad, fortalecemos nuestro espíritu de colaboración y trabajo en equipo.</p>
         </div>
         <div class="box">
             <h2 class="titleSection">¿Para qué?</h2>
-            <p>Para desarrollar competencias y habilidades que permitan impulsar el crecimiento de la empresa, contribuyendo de manera efectiva al logro de los objetivos organizacionales y al éxito sostenido.</p>
-            <img src="img/lineaf.png" alt="Imagen 3" class="block-image">
+            <p>Para fomentar la cultura de mejora continua y el desarrollo de competencias, donde cada colaborador pone en práctica sus habilidades. En esta experiencia, se generan aprendizajes significativos.</p>
         </div>
     </div>
 </section>
 
-
-
 <!-- Segunda Sección -->
 <section class="section-2">
+    <img src="img/Pictur2e1.png" alt="Imagen de prueba" class="block-image">
     <div class="text-container">
-        <h2>Historias de Éxito</h2>
-        <p>Cada paso que das es parte de un viaje emocionante, donde el trayecto es tan significativo como el destino. Cada instante es una oportunidad para dejar tu huella. Explora historias de éxito, crecimiento continuo y logros inspiradores, reflejando esfuerzo y dedicación.</p>
-        <button class="button" onclick="window.location.href='historias.html'">Leer más</button>
+        <h2>Objetivos Generales</h2>
+        <p>Fomentar el trabajo en equipo, la superación de obstáculos y el fortalecimiento de relaciones laborales. A través del Reto Chirripó, se busca promover un ambiente positivo que beneficie a todos.</p>
+        <button class="button">¡Conoce más!</button>
     </div>
-    <img src="img/Picture1grandota.png" alt="Imagen de prueba grande" class="right-image" onclick="window.location.href='historias.html'">
 </section>
-
 
 <!-- Tercera Sección -->
 <section class="section-3">
-    <img src="img/Picture6.png" alt="Imagen de prueba grande" class="left-image" onclick="window.location.href='puestos.html'">
+    <img src="img/Pictur2e1.png" alt="Imagen de prueba" class="block-image">
     <div class="text-container">
-        <h2>Posiciones y Requisitos</h2>
-        <p>Explora nuestras Posiciones y Requisitos, donde podrás conocer en detalle las oportunidades de crecimiento dentro de nuestro equipo de manufactura. Aquí encontrarás información clara sobre las posiciones disponibles, desde Operario 1 hasta Supervisor, junto con los requisitos necesarios para cada rol. Descubre cómo puedes avanzar en tu carrera y qué habilidades y experiencias te acercarán a tus metas profesionales.</p>
-        <button class="button" onclick="window.location.href='puestos.html'">Leer más</button>
+        <h2>Resultados Esperados</h2>
+        <p>El Reto Chirripó busca resultados como la mejora de la cohesión grupal, el aumento de la motivación laboral y el desarrollo de un entorno de trabajo más armónico.</p>
+        <button class="button">¡Conoce más!</button>
     </div>
 </section>
 
-
-<!-- Footer -->
 <footer>
-    <p>&copy; 2024 Todos los derechos reservados </p>
+    <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
 </footer>
 
 </body>
