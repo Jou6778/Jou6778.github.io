@@ -90,13 +90,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-/* Seccion 1  */
-  .section-1 {
+/* Sección 1 */
+.section-1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Alineación al inicio para que la imagen y el contenido estén alineados */
     margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
-    background-color: white; /* Fondo blanco para cada box */
     padding: 20px; /* Espaciado interior */
     margin-left: 30px; /* Elimina el margen izquierdo */
     margin-right: 30px; /* Elimina el margen derecho */
@@ -108,12 +107,12 @@
     width: 45%; /* Ancho de la imagen */
     height: auto;
     border-radius: 10px; /* Bordes redondeados */
-
+    display: block; /* Asegura que la imagen se comporte como bloque */
+    margin: 0 auto; /* Centra la imagen a la izquierda */
 }
 
 .right-container {
     display: flex;
-    flex-direction: column; /* Para colocar los boxes en columna */
     justify-content: space-between; /* Espaciado entre boxes */
     width: 45%; /* Ancho del contenedor derecho */
 }
@@ -123,9 +122,15 @@
     border: 1px solid #ccc; /* Borde gris claro */
     border-radius: 10px; /* Bordes redondeados */
     padding: 10px; /* Espaciado interior */
-    margin-bottom: 10px; /* Espacio entre los boxes */
+    flex: 1; /* Hace que todos los boxes tengan el mismo tamaño */
+    margin-right: 10px; /* Espacio entre los boxes */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
+.box:last-child {
+    margin-right: 0; /* Elimina el margen derecho en el último box */
+}
+
 .titleSection {
     font-weight: bold; /* Negrita para los títulos */
     color: RGBA(0, 60, 53, 1); /* Color para los títulos */
@@ -141,6 +146,7 @@
 
 
 
+
 /* Seccion 2  */
 
 .section-2 {
@@ -152,7 +158,7 @@
 }
 
 .section-2 img {
-    width: 40%;
+    width: 37%;
     height: auto;
     border-radius: 10px;
 }
@@ -281,10 +287,9 @@
 </section>
 
 
-<br>
 
+<hr>
 
-<hr>	
 
 
 
