@@ -117,7 +117,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: RGBA(0, 0, 0, 0);
     font-weight: 500;
 
 }
