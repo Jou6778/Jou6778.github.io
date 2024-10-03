@@ -46,19 +46,20 @@
 
         /* Nueva sección con imagen a la derecha */
         .welcome-section {
-   		 background-color: RGBA(217, 217, 217, 1);
-   		 padding: 50px 20px; /* Puedes ajustar el padding según lo que necesites */
-   		 display: flex;
-   		 justify-content: center;
-   		 align-items: center;
-  		  position: relative;
-   		 height: 300px;
-  		  text-align: center;
-  		  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  		  margin-top: 0; /* Elimina el margen superior */
-  		  margin-left: 0; /* Elimina el margen izquierdo */
-  	  	margin-right: 0; /* Elimina el margen derecho */
-		}
+    background-color: RGBA(217, 217, 217, 1);
+    padding: 50px 20px; /* Puedes ajustar el padding según lo que necesites */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Elimina el margen superior */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    margin-right: 0; /* Elimina el margen derecho */
+}
+
 
 
         .welcome-section img {
@@ -66,7 +67,7 @@
             top: 0;
             right: 0;
             width: 500px;
-            height: auto;
+            height: 50px;
         }
 
         .welcome-section h2 {
@@ -90,15 +91,17 @@
         }
 
 /* Seccion de imagen y 3 contenedores  */
-      .section-1 {
+  .section-1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Alineación al inicio para que la imagen y el contenido estén alineados */
-    margin: 20px 0; /* Espacio superior e inferior */
+    margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
     background-color: RGBA(0, 0, 0, 0); /* Color de fondo para el contenedor */
     padding: 20px; /* Espaciado interior */
-  margin-left: 5px; /* Elimina el margen izquierdo */
-  	  	margin-right:5px; /* Elimina el margen derecho */
+    margin-left: 20px; /* Elimina el margen izquierdo */
+    margin-right: 20px; /* Elimina el margen derecho */
+    position: relative; /* Permite la superposición */
+    z-index: 1; /* Asegura que esta sección esté encima */
 }
 
 .left-image {
