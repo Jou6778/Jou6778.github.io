@@ -93,21 +93,22 @@
 /* Seccion de imagen y 3 contenedores  */
   .section-1 {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alineación al inicio para que la imagen y el contenido estén alineados */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     margin: -50px 0 20px 0; /* Ajusta el margen superior para superponerse */
     background-color: RGBA(0, 0, 0, 0); /* Color de fondo para el contenedor */
     padding: 20px; /* Espaciado interior */
-    margin-left: 20px; /* Elimina el margen izquierdo */
-    margin-right: 20px; /* Elimina el margen derecho */
+    margin-left: 5px; /* Elimina el margen izquierdo */
+    margin-right: 5px; /* Elimina el margen derecho */
     position: relative; /* Permite la superposición */
     z-index: 1; /* Asegura que esta sección esté encima */
 }
 
 .left-image {
-    width: 50%; /* Ancho de la imagen */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados */
+    max-height: 100%; /* Asegura que la imagen no exceda la altura del contenedor */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 .right-container {
@@ -214,6 +215,7 @@
         </div>
     </div>
 </section>
+
 
 
 
