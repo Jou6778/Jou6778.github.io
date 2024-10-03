@@ -90,7 +90,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-/* Seccion de imagen y 3 contenedores  */
+/* Seccion 1  */
   .section-1 {
     display: flex;
     justify-content: space-between;
@@ -141,23 +141,48 @@
 
 
 
+/* Seccion 2  */
 
-        .section-2, .section-3 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 300px;
+}
 
-        .section-2 img, .section-3 img {
-            width: 30%;
-            height: auto;
-            border-radius: 10px;
-        }
+.section-2 img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
 
-        .section-2 .text-container, .section-3 .text-container {
-            width: 65%;
-        }
+.section-2 .text-container {
+    width: 65%;
+}
+
+.section-2 h2 {
+    color: RGBA(0, 60, 53, 1);
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-2 .button {
+    background: transparent; /* Sin fondo */
+    color: RGBA(175, 134, 46, 1); /* Color del texto */
+    border: none; /* Sin borde */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-decoration: underline; /* Subraya el texto */
+}
+
+.section-2 .button:hover {
+    text-decoration: none; /* Elimina la subrayado al pasar el ratón */
+}
+
+
+
 
         footer {
             background-color: #333;
@@ -196,7 +221,7 @@
 
 <!-- Primera Sección -->
 <section class="section-1">
-    <img src="img/Picture1grandota.png" alt="Imagen de prueba grande" class="left-image">
+    <img src="img/WhatsApp Image 2024-09-04 at 06.44.09_ea0ae913.jpg" alt="Imagen de prueba grande" class="left-image">
     <div class="right-container">
         <div class="box">
             <h2 class="titleSection">¿Qué?</h2>
@@ -217,29 +242,25 @@
 </section>
 
 
+<br>
 
 
 <hr>
 
-<hr>
-<!-- Primera Sección -->
-<section class="section-1">
- <img src="img/Picture1grandota.png" alt="Imagen de prueba grande">    <div class="text-container">
-        <h2>Sección 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim justo id ex feugiat, eget posuere odio congue.</p>
-        <p>Curabitur maximus, felis sit amet fermentum efficitur, risus ipsum gravida neque, sit amet luctus sem arcu non nisi.</p>
-        <p>Aliquam in mi vel magna elementum vehicula quis in libero. Donec vehicula mauris sed felis dictum, ac blandit lectus.</p>
-    </div>
-</section>
+
 
 <!-- Segunda Sección -->
 <section class="section-2">
-    <img src="https://establishmentlabscr.sharepoint.com/sites/DatabasePginaWebTTD/Lists/tblPosiciones/Attachments/1/Slide2.PNG?web=1" alt="Imagen de prueba grande">
     <div class="text-container">
-        <h2>Sección 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet urna malesuada, accumsan ex at, vehicula purus.</p>
+        <h2>Historias de Éxito</h2>
+        <p>Cada paso que das es parte de un viaje emocionante, donde el trayecto es tan significativo como el destino. Cada instante es una oportunidad para dejar tu huella. Explora historias de éxito, crecimiento continuo y logros inspiradores, reflejando esfuerzo y dedicación.</p>
+        <button class="button" onclick="window.location.href='historias.html'">Leer más</button>
     </div>
+    <img src="img/Picture1grandota.png" alt="Imagen de prueba grande" class="right-image">
 </section>
+
+
+
 
 <!-- Tercera Sección -->
 <section class="section-3">
