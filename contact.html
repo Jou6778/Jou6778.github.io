@@ -112,11 +112,11 @@
                 <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <img id="modalImage" src="" alt="" class="img-fluid mb-3">
-                <div id="modalContent"></div>
-                <div class="owl-carousel testimonial-carousel position-relative" id="modalCarousel"></div>
-            </div>
+           <div class="modal-body">
+    <img id="modalImage" src="" alt="" class="img-fluid mb-3">
+    <div id="modalContent"></div>
+    <div class="owl-carousel testimonial-carousel position-relative" id="modalCarousel"></div> <!-- Asegúrate de que este contenedor esté bien -->
+</div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -267,24 +267,16 @@
             </div>
     `;
 
-    function openModal(name, imgSrc, content, carouselContent) {
-        document.getElementById('testimonialModalLabel').innerText = name;
-        document.getElementById('modalImage').src = imgSrc;
-        document.getElementById('modalContent').innerHTML = content;
 
-        const carousel = document.getElementById('modalCarousel');
-        carousel.innerHTML = carouselContent;
+    function openModal(name, image, content) {
+             $('#modalImage').attr('src', image);
+             $('#testimonialModalLabel').text(name);
+             $('#modalContent').html(content);
+            $('#testimonialModal').modal('show');
 
-        // // Inicializar el carrusel después de llenar el contenido
-        // $('#modalCarousel').owlCarousel({
-        //     items: 1,
-        //     loop: true,
-        //     nav: true,
-        //     dots: true
-        // });
+            }
 
-        $('#testimonialModal').modal('show');
-    }
+
 </script>
 
        
