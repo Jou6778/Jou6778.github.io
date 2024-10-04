@@ -157,6 +157,73 @@
     <!-- Testimonial End -->
         
 
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Historias</h6>
+            <h1 class="mb-5">Trayectorias de Éxito!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item text-center" data-toggle="modal" data-target="#testimonialModal" onclick="openModal('Jaime Mendez Porras', 'Asociado de Asuntos Regulatorios', 'img/Picture1.png', 'Mi nombre es Jaime y mi carrera en el sector de dispositivos médicos comenzó en 2016...')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture1.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Jaime Mendez Porras</h5>
+                <p>Asociado de Asuntos Regulatorios</p>
+            </div>
+            <div class="testimonial-item text-center" data-toggle="modal" data-target="#testimonialModal" onclick="openModal('Diana Carolina Segura Bolanos', 'Jr Quality Engineering Supervisor', 'img/Picture2.jpg', 'Mi nombre es Diana Segura y quiero compartir mi trayectoria...')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture2.jpg" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Diana Carolina Segura Bolanos</h5>
+                <p>Jr Quality Engineering Supervisor</p>
+            </div>
+            <div class="testimonial-item text-center" data-toggle="modal" data-target="#testimonialModal" onclick="openModal('Yuliana Valverde Alfaro', 'Buyer Pleno', 'img/yuli-removebg-preview.png', 'Mi nombre es Yuliana Valverde Alfaro y quiero compartir mi trayectoria...')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/yuli-removebg-preview.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Yuliana Valverde Alfaro</h5>
+                <p>Buyer Pleno</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Modal Start -->
+<div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="img-fluid mb-3" style="width: 150px; height: 150px;">
+                <p id="modalPosition"></p>
+                <p id="modalText"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
+
+<script>
+    function openModal(name, position, imageUrl, text) {
+        // Set modal content dynamically
+        document.getElementById('testimonialModalLabel').textContent = name;
+        document.getElementById('modalPosition').textContent = position;
+        document.getElementById('modalImage').src = imageUrl;
+        document.getElementById('modalText').textContent = text;
+    }
+</script>
+
+
+
+
+
+
     <!-- Footer Start -->
 <div class="container-fluid footer-light text-light pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
@@ -187,6 +254,12 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
