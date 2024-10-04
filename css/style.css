@@ -436,3 +436,6 @@ color: #FFFFFF;
     padding-right: 0;
     border-right: none;
 }
+.footer-light {
+    background-color: rgba(0, 60, 53, 1) !important;
+}
