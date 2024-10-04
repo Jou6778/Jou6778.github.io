@@ -173,19 +173,21 @@
 
     <style>
     .modal-dialog {
-        max-width: 80%; /* Forzar el ancho completo */
-        margin: 0; /* Eliminar el margen del modal */
-        display: flex;
-        align-items: center; /* Centrar verticalmente */
-        justify-content: center; /* Centrar horizontalmente */
+        max-width: 100%; /* Forzar el ancho completo */
+        margin: auto; /* Centrar horizontalmente */
+        height: auto; /* Permitir que el contenido determine la altura */
+        display: flex; /* Para centrar verticalmente */
+        align-items: center; /* Alinear al centro verticalmente */
+        justify-content: center; /* Alinear al centro horizontalmente */
     }
 
     .modal-content {
-        height: 80vh; /* Ocupar el alto completo de la ventana */
+        width: 100%; /* Asegurar que el contenido use todo el ancho disponible */
+        height: auto; /* Ajustar a la altura del contenido */
         border-radius: 0; /* Opcional: eliminar bordes redondeados */
     }
-
 </style>
+
 
 
 
