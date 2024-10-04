@@ -101,10 +101,10 @@
     </div>
     <!-- Testimonial End -->
 
-    
+
 <!-- Modal Start -->
 <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-fullscreen" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
@@ -121,6 +121,7 @@
     </div>
 </div>
 <!-- Modal End -->
+
 
 
 
@@ -168,6 +169,22 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <style>
+    .modal-dialog {
+        max-width: 100%; /* Forzar el ancho completo */
+        margin: 0; /* Eliminar el margen del modal */
+    }
+
+    .modal-content {
+        height: 100vh; /* Ocupar el alto completo de la ventana */
+        border-radius: 0; /* Opcional: eliminar bordes redondeados */
+    }
+</style>
+
+
+
 </body>
 
 </html>
