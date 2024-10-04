@@ -131,12 +131,11 @@
                 <div class="testimonial-item text-center" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="img/operario1.png">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/op1.png" style="width: 200px; height: 150px;">
                     <h5 class="mb-0">Operario 1</h5>
-                    <!-- <p>Asociado de Asuntos Regulatorios</p> -->
-                        <div class="testimonial-text bg-light text-center p-4">
-                            <p class="mb-0"> 
-                                <img src="img/operario1.png" alt="Operario 1" class="img-fluid" style="max-width: 100%; height: auto;">
-                            </p>
-                        </div>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0"> 
+                            <img src="img/operario1.png" alt="Operario 1" class="img-fluid" style="max-width: 100%; height: auto;">
+                        </p>
+                    </div>
                 </div>
 
 
@@ -209,12 +208,11 @@
     <!-- Testimonial End -->
 
 
-
 <!-- Modal -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-             <div class="modal-header">
+            <div class="modal-header">
                 <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -252,6 +250,18 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+<script>
+    // Función para cargar la imagen en el modal al hacer clic en un elemento
+    document.querySelectorAll('.testimonial-item').forEach(item => {
+        item.addEventListener('click', function() {
+            // Capturar la URL de la imagen desde el atributo data-image
+            const imageUrl = this.getAttribute('data-image');
+            // Asignar la URL de la imagen al elemento <img> dentro del modal
+            document.getElementById('modalImage').src = imageUrl;
+        });
+    });
+</script>
 
 
     <!-- JavaScript Libraries -->
