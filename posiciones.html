@@ -128,11 +128,11 @@
             <div class="owl-carousel testimonial-carousel position-relative">,
 
 
-                <div class="testimonial-item text-center" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="img/operario1.png">
+               <div class="testimonial-item text-center" onclick="openModal('Operario 1', 'img/operario1.png', 'Descripción del operario 1')">
                     <img class="border rounded-circle p-2 mx-auto mb-3" src="img/op1.png" style="width: 200px; height: 150px;">
                     <h5 class="mb-0">Operario 1</h5>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0"> 
+                        <p class="mb-0">
                             <img src="img/operario1.png" alt="Operario 1" class="img-fluid" style="max-width: 100%; height: auto;">
                         </p>
                     </div>
@@ -213,11 +213,12 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
+                <h5 class="modal-title" id="modalTitle">Título del Testimonio</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <img id="modalImage" src="" alt="Imagen en grande" class="img-fluid" style="width: 100%; height: auto;">
+                <p id="modalContent"></p> <!-- Aquí puedes mostrar contenido adicional si lo necesitas -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -252,16 +253,22 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     
 <script>
-    // Función para cargar la imagen en el modal al hacer clic en un elemento
-    document.querySelectorAll('.testimonial-item').forEach(item => {
-        item.addEventListener('click', function() {
-            // Capturar la URL de la imagen desde el atributo data-image
-            const imageUrl = this.getAttribute('data-image');
-            // Asignar la URL de la imagen al elemento <img> dentro del modal
-            document.getElementById('modalImage').src = imageUrl;
-        });
-    });
+    function openModal(title, imageUrl, content) {
+        // Asignar el título
+        document.getElementById('modalTitle').textContent = title;
+        
+        // Asignar la URL de la imagen
+        document.getElementById('modalImage').src = imageUrl;
+        
+        // Asignar el contenido adicional
+        document.getElementById('modalContent').textContent = content;
+        
+        // Mostrar el modal
+        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+    }
 </script>
+
 
 
     <!-- JavaScript Libraries -->
