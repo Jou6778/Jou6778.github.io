@@ -173,13 +173,20 @@
 
     <style>
     .modal-dialog {
-        max-width: 70%; /* Forzar el ancho completo */
+        max-width: 80%; /* Forzar el ancho completo */
         margin: 0; /* Eliminar el margen del modal */
     }
 
     .modal-content {
-        height: 70vh; /* Ocupar el alto completo de la ventana */
+        height: 80vh; /* Ocupar el alto completo de la ventana */
         border-radius: 0; /* Opcional: eliminar bordes redondeados */
+    }
+    /* Centrar el modal verticalmente */
+    .modal {
+        display: flex;
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        height: 100vh; /* Ocupa el alto completo de la ventana */
     }
 </style>
 
