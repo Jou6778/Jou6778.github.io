@@ -90,88 +90,106 @@
     <!-- Header End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                <h1 class="mb-5">Contact For Any Query</h1>
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Historias</h6>
+            <h1 class="mb-5">Trayectorias de Éxito!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item text-center" data-toggle="modal" data-target="#testimonialModal" onclick="openModal('Jaime Mendez Porras', 'img/Picture1.png', jaimeContent)">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture1.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Jaime Mendez Porras</h5>
+                <p>Asociado de Asuntos Regulatorios</p>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5>Get In Touch</h5>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                            <i class="fa fa-map-marker-alt text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="text-primary">Office</h5>
-                            <p class="mb-0">123 Street, New York, USA</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="text-primary">Mobile</h5>
-                            <p class="mb-0">+012 345 67890</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
-                            <i class="fa fa-envelope-open text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h5 class="text-primary">Email</h5>
-                            <p class="mb-0">info@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </div>
-                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="testimonial-item text-center" data-toggle="modal" data-target="#testimonialModal" onclick="openModal('Diana Carolina Segura Bolanos', 'img/Picture2.jpg', dianaContent)">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture2.jpg" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Diana Carolina Segura Bolanos</h5>
+                <p>Jr Quality Engineering Supervisor</p>
+            </div>
+            <div class="testimonial-item text-center" data-toggle="modal" data-target="#testimonialModal" onclick="openModal('Yuliana Valverde Alfaro', 'img/yuli-removebg-preview.png', yulianaContent)">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/yuli-removebg-preview.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Yuliana Valverde Alfaro</h5>
+                <p>Buyer Pleno</p>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+</div>
+<!-- Testimonial End -->
+
+<!-- Modal Start -->
+<div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="img-fluid mb-3" style="width: 150px; height: 150px;">
+                <div id="modalContent">
+                    <!-- Aquí se cargará el contenido HTML dinámico -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
+
+<script>
+    // Definir el contenido en HTML para cada usuario
+    const jaimeContent = `
+        <h4>Nombre Completo: Jaime Mendez Porras</h4>
+        <p>Edad: 35 años</p>
+        <h5>Puestos</h5>
+        <ul>
+            <li><strong>Puesto 1:</strong> Operario de empaque secundario (2016 - 2018)</li>
+            <li><strong>Puesto 2:</strong> Técnico de Calidad (2018 - 2020)</li>
+            <li><strong>Puesto 3:</strong> Coordinador de Incoming Inspection (2020 - 2021)</li>
+            <li><strong>Puesto 4:</strong> Asociado de Asuntos Regulatorios (2022 - Presente)</li>
+        </ul>
+    `;
+
+    const dianaContent = `
+        <h4>Nombre Completo: Diana Carolina Segura Bolanos</h4>
+        <p>Edad: 30 años</p>
+        <h5>Puestos</h5>
+        <ul>
+            <li><strong>Puesto 1:</strong> Operario de Producción (2014 - 2016)</li>
+            <li><strong>Puesto 2:</strong> Técnico de Calidad (2016 - 2018)</li>
+            <li><strong>Puesto 3:</strong> Supervisor de Calidad (2018 - Presente)</li>
+        </ul>
+    `;
+
+    const yulianaContent = `
+        <h4>Nombre Completo: Yuliana Valverde Alfaro</h4>
+        <p>Edad: 29 años</p>
+        <h5>Puestos</h5>
+        <ul>
+            <li><strong>Puesto 1:</strong> Buyer Junior (2015 - 2017)</li>
+            <li><strong>Puesto 2:</strong> Buyer Pleno (2017 - Presente)</li>
+        </ul>
+    `;
+
+    function openModal(name, imageUrl, content) {
+        // Set modal content dynamically
+        document.getElementById('testimonialModalLabel').textContent = name;
+        document.getElementById('modalImage').src = imageUrl;
+        document.getElementById('modalContent').innerHTML = content;
+    }
+</script>
+
+
+
+
+
 
 
     <!-- Footer Start -->
