@@ -115,53 +115,11 @@
                 <div id="modalContent"></div>
 
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
+                <!-- Carrusel Start -->
+                <div id="modalCarousel" class="owl-carousel testimonial-carousel position-relative">
+                    <!-- El contenido del carrusel se insertará aquí -->
                 </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
+                <!-- Carrusel End -->
 
             </div>
             <div class="modal-footer">
@@ -205,78 +163,64 @@
 
 
     <script>
-    const jaimeContent = `<p>Información sobre Jaime Mendez Porras...</p>
-    <!-- Galería de Jaime -->
-    
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.</p>
-                    </div>
-                </div>
-                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <!-- Agrega más items aquí según sea necesario -->
+    const carouselContentMap = {
+        'Jaime Mendez Porras': `
+            <div class='testimonial-item'>
+                <img class='border rounded-circle p-2 mx-auto mb-3' src='img/testimonial-1.jpg' style='width: 80px; height: 80px;'>
+                <h5 class='mb-0'>Testimonio 1</h5>
+                <p>Este es un gran testimonio de Jaime.</p>
             </div>
-        `;
-
-    const dianaContent = `<p>Información sobre Diana Carolina Segura Bolanos...</p>
-    <!-- Galería de Diana -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-            <h1 class="mb-5">Our Students Say!</h1>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.</p>
-                    </div>
-                </div>
-                <!-- Agrega más items aquí según sea necesario -->
+            <div class='testimonial-item'>
+                <img class='border rounded-circle p-2 mx-auto mb-3' src='img/testimonial-2.jpg' style='width: 80px; height: 80px;'>
+                <h5 class='mb-0'>Testimonio 2</h5>
+                <p>Este es otro testimonio de Jaime.</p>
             </div>
-        </div>
-    </div>`;
-
-    const yulianaContent = `<p>Información sobre Yuliana Valverde Alfaro...</p>
-    <!-- Galería de Yuliana -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-            <h1 class="mb-5">Our Students Say!</h1>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.</p>
-                    </div>
-                </div>
-                <!-- Agrega más items aquí según sea necesario -->
+        `,
+        'Otro Usuario': `
+            <div class='testimonial-item'>
+                <img class='border rounded-circle p-2 mx-auto mb-3' src='img/testimonial-3.jpg' style='width: 80px; height: 80px;'>
+                <h5 class='mb-0'>Testimonio 1</h5>
+                <p>Este es un gran testimonio de Otro Usuario.</p>
             </div>
-        </div>
-    </div>`;
+            <div class='testimonial-item'>
+                <img class='border rounded-circle p-2 mx-auto mb-3' src='img/testimonial-4.jpg' style='width: 80px; height: 80px;'>
+                <h5 class='mb-0'>Testimonio 2</h5>
+                <p>Este es otro testimonio de Otro Usuario.</p>
+            </div>
+        `,
+    };
 
-    function openModal(name, image, content) {
+
+ function openModal(name, image, content) {
+        $('#modalImage').attr('src', image);
+        $('#testimonialModalLabel').text(name);
+        $('#modalContent').html(content);
+        
+        // Obtén el contenido del carrusel basado en el nombre
+        const carouselContent = carouselContentMap[name] || '';
+        $('#modalCarousel').html(carouselContent); // Insertar contenido del carrusel
+
+        // Inicializar el carrusel
+        $('#modalCarousel').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            dots: true,
+        });
+
+        $('#testimonialModal').modal('show');
+    }
+</script>
+
+
+    <!-- function openModal(name, image, content) {
         $('#modalImage').attr('src', image);
         $('#testimonialModalLabel').text(name);
         $('#modalContent').html(content);
         $('#testimonialModal').modal('show');
     }
 </script>
-
+ -->
 
 
         <script src="lib/wow/wow.min.js"></script>
