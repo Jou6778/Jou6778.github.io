@@ -230,7 +230,7 @@ color: #FFFFFF;
     height: 2px;
     top: 4px;
     left: -40px;
-    background: var(--primary);
+    background: rgba(0, 60, 53, 1); /* Color nuevo */
     z-index: -1;
 }
 
