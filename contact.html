@@ -114,12 +114,21 @@
                 <img id="modalImage" src="" alt="" class="img-fluid mb-3" style="width: 150px; height: 150px;">
                 <div id="modalContent"></div>
 
+            <!-- Testimonial Start -->
+                <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="container">
+                        <div class="text-center">
+                            <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                            <h1 class="mb-5">Our Students Say!</h1>
+                        </div> 
 
-                <!-- Carrusel Start -->
-                <div id="modalCarousel" class="owl-carousel testimonial-carousel position-relative">
-                    <!-- El contenido del carrusel se insertará aquí -->
+                        <!-- Carrusel Start -->
+                        <div id="modalCarousel" class="owl-carousel testimonial-carousel position-relative">
+                            <!-- El contenido del carrusel se insertará aquí -->
+                        </div>
+                    </div>
                 </div>
-                <!-- Carrusel End -->
+                        <!-- Carrusel End -->
 
             </div>
             <div class="modal-footer">
@@ -246,14 +255,6 @@
         // Obtén el contenido del carrusel basado en el nombre
         const carouselContent = carouselContentMap[name] || '';
         $('#modalCarousel').html(carouselContent); // Insertar contenido del carrusel
-
-        // Inicializar el carrusel
-        $('#modalCarousel').owlCarousel({
-            items: 1,
-            loop: true,
-            nav: true,
-            dots: true,
-        });
 
         $('#testimonialModal').modal('show');
     }
