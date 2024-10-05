@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -74,32 +74,47 @@
     <!-- Header End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Historias</h6>
-                <h1 class="mb-5">Trayectorias de Éxito!</h1>
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Historias</h6>
+            <h1 class="mb-5">Trayectorias de Éxito!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+            <div class="testimonial-item text-center" onclick="openModal('Jaime Mendez Porras', 'Asociado de Asuntos Regulatorios')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture1.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Jaime Mendez Porras</h5>
+                <p>Asociado de Asuntos Regulatorios</p>
             </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center" onclick="openModal('Jaime Mendez Porras', 'img/Picture1.png')">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture1.png" style="width: 150px; height: 150px;">
-                    <h5 class="mb-0">Jaime Mendez Porras</h5>
-                    <p>Asociado de Asuntos Regulatorios</p>
-                </div>
-                <div class="testimonial-item text-center" onclick="openModal('Diana Carolina Segura Bolanos', 'img/Picture2.jpg')">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture2.jpg" style="width: 150px; height: 150px;">
-                    <h5 class="mb-0">Diana Carolina Segura Bolanos</h5>
-                    <p>Jr Quality Engineering Supervisor</p>
-                </div>
-                <div class="testimonial-item text-center" onclick="openModal('Yuliana Valverde Alfaro', 'img/yuli-removebg-preview.png')">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/yuli-removebg-preview.png" style="width: 150px; height: 150px;">
-                    <h5 class="mb-0">Yuliana Valverde Alfaro</h5>
-                    <p>Buyer Pleno</p>
-                </div>
+            <div class="testimonial-item text-center" onclick="openModal('Diana Carolina Segura Bolanos', 'Jr Quality Engineering Supervisor')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/Picture2.jpg" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Diana Carolina Segura Bolanos</h5>
+                <p>Jr Quality Engineering Supervisor</p>
+            </div>
+            <div class="testimonial-item text-center" onclick="openModal('Yuliana Valverde Alfaro', 'Buyer Pleno')">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="img/yuli-removebg-preview.png" style="width: 150px; height: 150px;">
+                <h5 class="mb-0">Yuliana Valverde Alfaro</h5>
+                <p>Buyer Pleno</p>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+</div>
+<!-- Testimonial End -->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Título del Testimonio</h2>
+            <p id="modalContent">Contenido del testimonio.</p>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 <!-- Modal Start -->
@@ -172,103 +187,32 @@
 
 
     <script>
-    const carouselContentMap = {
-        'Jaime Mendez Porras': `
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-    <!-- Testimonial End -->
-        `,
-        'Diana Carolina Segura Bolanos': `
-        <!-- Testimonial Start -->
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-    <!-- Testimonial End -->
-        `,
-    };
-
-
- function openModal(name, image, content) {
-        $('#modalImage').attr('src', image);
-        $('#testimonialModalLabel').text(name);
-        $('#modalContent').html(content);
-        
-        // Obtén el contenido del carrusel basado en el nombre
-        const carouselContent = carouselContentMap[name] || '';
-        $('#modalCarousel').html(carouselContent); // Insertar contenido del carrusel
-
-        $('#testimonialModal').modal('show');
+    function openModal(title, content) {
+        document.getElementById("modalTitle").innerText = title; // Actualiza el título del modal
+        document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
+        document.getElementById("myModal").style.display = "block"; // Muestra el modal
     }
-</script>
 
-
-    <!-- function openModal(name, image, content) {
-        $('#modalImage').attr('src', image);
-        $('#testimonialModalLabel').text(name);
-        $('#modalContent').html(content);
-        $('#testimonialModal').modal('show');
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none"; // Oculta el modal
     }
+
+    // Cerrar el modal si el usuario hace clic fuera del contenido del modal
+    window.onclick = function(event) {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    // function openModal(name, image, content) {
+    //     $('#modalImage').attr('src', image);
+    //     $('#testimonialModalLabel').text(name);
+    //     $('#modalContent').html(content);
+    //     $('#testimonialModal').modal('show');
+    // }
 </script>
- -->
 
 
         <script src="lib/wow/wow.min.js"></script>
@@ -296,6 +240,41 @@
         height: auto; /* Ajustar a la altura del contenido */
         border-radius: 0; /* Opcional: eliminar bordes redondeados */
     }
+
+    /* Estilos para el modal */
+    .modal {
+        display: none; /* Ocultar el modal por defecto */
+        position: fixed; /* Fijar el modal en la pantalla */
+        z-index: 1000; /* Mostrar por encima de otros elementos */
+        left: 0;
+        top: 0;
+        width: 100%; /* Ancho completo */
+        height: 100%; /* Alto completo */
+        overflow: auto; /* Habilitar desplazamiento si es necesario */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    }
+
+    .modal-content {
+        background-color: #fefefe; /* Fondo blanco */
+        margin: auto;
+        padding: 20px; /* Espaciado interno */
+        border: 1px solid #888; /* Bordes del modal */
+        width: 80%; /* Ancho del contenido del modal */
+    }
+
+    .close {
+        color: #aaa; /* Color de la "X" de cerrar */
+        float: right; /* Flotar a la derecha */
+        font-size: 28px; /* Tamaño de fuente */
+        font-weight: bold; /* Negrita */
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black; /* Color al pasar el mouse */
+        text-decoration: none; /* Sin subrayado */
+        cursor: pointer; /* Cursor tipo puntero */
+    }
 </style>
 
 
@@ -303,3 +282,4 @@
 </body>
 
 </html>
+ -->
