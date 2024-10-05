@@ -276,6 +276,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 15px; /* Bordes redondeados */
+
     }
 
     @media (min-width: 768px) {
@@ -287,7 +289,9 @@
     .modal-content {
         width: 100%; /* Asegura que el contenido ocupe el ancho del modal */
         height: auto; /* Ajusta la altura al contenido */
-        border-radius: 0; /* Bordes rectos */
+        border-radius: 15px; /* Bordes rectos */
+        overflow: hidden; /* Asegurar que el contenido no se desborde */
+
     }
 
     /* Ajustar el alto del modal para centrarlo verticalmente en la pantalla */
