@@ -106,9 +106,14 @@
 <div id="myModal" class="modal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle">Título del Testimonio</h2>
-            <p id="modalContent">Contenido del testimonio.</p>
+             <div class="modal-header">
+                <h5 class="modal-title" id="testimonialModalLabel">Título del Testimonio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeModal()"></button>
+            </div>
+                <div class="modal-body text-center">
+                    <h2 id="modalTitle">Título del Testimonio</h2>
+                    <p id="modalContent">Contenido del testimonio.</p>
+                </div>
         </div>
     </div>
 </div>
@@ -116,9 +121,7 @@
 
 
 
-
-<!-- Modal Start -->
-<div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="testimonialModal" tabindex="-1" role="dialog" aria-labelledby="testimonialModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -129,7 +132,7 @@
                 <img id="modalImage" src="" alt="" class="img-fluid mb-3" style="width: 150px; height: 150px;">
                 <div id="modalContent"></div>
 
-            <!-- Testimonial Start -->
+           
                 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="container">
                         <div class="text-center">
@@ -137,13 +140,13 @@
                             <h1 class="mb-5">Our Students Say!</h1>
                         </div> 
 
-                        <!-- Carrusel Start -->
+                       
                         <div id="modalCarousel" class="owl-carousel testimonial-carousel position-relative">
-                            <!-- El contenido del carrusel se insertará aquí -->
+                          
                         </div>
                     </div>
                 </div>
-                        <!-- Carrusel End -->
+                      
 
             </div>
             <div class="modal-footer">
@@ -152,9 +155,7 @@
         </div>
     </div>
 </div>
-<!-- Modal End -->
-
-
+ -->
 
 
 
