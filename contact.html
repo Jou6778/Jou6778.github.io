@@ -312,16 +312,21 @@
 
   
     <script>
-      function openModal(title, content, person) {
-            document.getElementById("modalTitle").innerText = title; // Actualiza el título del modal
-            document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
+    function openModal(title, content, person) {
+        document.getElementById("modalTitle").innerText = title; // Actualiza el título del modal
+        document.getElementById("modalContent").innerText = content; // Actualiza el contenido del modal
 
-            // Oculta todos los carruseles
-            document.getElementById("dianaCarousel").style.display = "none";
-            document.getElementById("jaimeCarousel").style.display = "none";
-            document.getElementById("yuliCarousel").style.display = "none";
+        // Oculta todos los carruseles
+        document.getElementById("dianaCarousel").style.display = "none";
+        document.getElementById("jaimeCarousel").style.display = "none";
+        document.getElementById("yuliCarousel").style.display = "none";
 
-            // Muestra el carrusel correspondiente
+        // Muestra el modal
+        $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
+
+        // Temporizador para mostrar el carrusel correspondiente
+        setTimeout(function() {
+            // Muestra el carrusel correspondiente después de 1 segundo
             if (person === 'Diana Carolina Segura Bolanos') {
                 document.getElementById("dianaCarousel").style.display = "block";
             } else if (person === 'Jaime Mendez Porras') {
@@ -329,12 +334,10 @@
             } else if (person === 'Yuliana Valverde Alfaro') {
                 document.getElementById("yuliCarousel").style.display = "block";
             }
+        }, 500); // 1000 milisegundos = 1 segundo
+    }
+</script>
 
-            // Muestra el modal
-            $('#myModal').modal('show'); // Usa jQuery para mostrar el modal
-        }
-
-    </script>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
