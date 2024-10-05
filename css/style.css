@@ -248,11 +248,15 @@ color: #FFFFFF;
 .section-title.text-start::before {
     width: calc(100% + 40px);
     left: 0;
-}
+        background: rgba(0, 60, 53, 1); /* Color nuevo */
+
+}   
 
 .section-title.text-start::after {
     width: calc(100% + 60px);
     left: 0;
+        background: rgba(0, 60, 53, 1); /* Color nuevo */
+
 }
 
 
