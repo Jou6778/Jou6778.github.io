@@ -196,8 +196,8 @@ color: #FFFFFF;
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: rgba(0, 60, 53, 1);
+    border-color: rgba(0, 60, 53, 1);
 }
 
 .page-header {
@@ -345,7 +345,7 @@ color: #FFFFFF;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
+    background: rgba(0, 60, 53, 1) !important;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text * {
@@ -370,7 +370,7 @@ color: #FFFFFF;
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--primary);
+    background: rgba(0, 60, 53, 1);
     border-color: var(--primary);
 }
 
