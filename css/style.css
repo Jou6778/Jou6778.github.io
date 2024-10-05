@@ -241,7 +241,7 @@ color: #FFFFFF;
     height: 2px;
     bottom: 5px;
     left: -60px;
-    background: var(--primary);
+    background: rgba(0, 60, 53, 1); /* Color nuevo */
     z-index: -1;
 }
 
